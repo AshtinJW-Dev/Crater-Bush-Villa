@@ -2,17 +2,33 @@
 (function() {
   "use strict";
 
-  /**
-   * Easy selector helper function
-   */
+  // Easy selector helper function
   const select = (el, all = false) => {
-    el = el.trim()
+    el = el.trim();
     if (all) {
-      return [...document.querySelectorAll(el)]
+      return [...document.querySelectorAll(el)];
     } else {
-      return document.querySelector(el)
+      return document.querySelector(el);
     }
-  }
+  };
+
+  // Function to highlight active navbar link
+  const highlightActiveLink = () => {
+    const currentPath = window.location.pathname;
+    const navbarLinks = select('.navbar-nav li a', true);
+
+    navbarLinks.forEach(link => {
+      const linkPath = link.getAttribute('href');
+      if (currentPath.includes(linkPath)) {
+        link.classList.add('active');
+      } else {
+        link.classList.remove('active');
+      }
+    });
+  };
+
+  // Call the function to highlight active link
+  highlightActiveLink();
 
   /**
    * Easy event listener function
@@ -204,4 +220,59 @@
     }
   });
 
+
+  
 })()
+
+function submitForm(event) {
+  event.preventDefault(); // Prevent form submission (for testing)
+
+  var form = document.getElementById('contact-form');
+  var button = document.getElementById('button-sub');
+  var inputs = form.querySelectorAll('.field');
+
+  var isFormFilled = true;
+
+  inputs.forEach(function (input) {
+    if (input.value.trim() === '') {
+      isFormFilled = false;
+      return;
+    }
+  });
+
+  if (isFormFilled && form.checkValidity()) {
+    button.style.display = 'block'; // Show the button
+  } else {
+    button.style.display = 'none'; // Hide the button
+  }
+
+  if (form.checkValidity()) {
+    event.target.classList.add('button--loading'); // Add loading class to the button
+    form.submit(); // Submit the form
+  }
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+  var form = document.getElementById('contact-form');
+  var button = document.getElementById('button-sub');
+
+  form.addEventListener('input', function () {
+    var isFormValid = true;
+
+    form.querySelectorAll('.field').forEach(function (input) {
+      if (!input.checkValidity()) {
+        isFormValid = false;
+        return;
+      }
+    });
+
+    if (isFormValid && form.checkValidity()) {
+      button.style.display = 'block'; // Show the button
+    } else {
+      button.style.display = 'none'; // Hide the button
+    }
+  });
+});
+
+// Add the `submitForm()` function to the `button` element
+button.addEventListener('click', submitForm);

@@ -10,7 +10,7 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/branding/favicon_io (1)/favicon.ico" rel="icon">
+  <link href="assets/img/branding/favicon_io (1)/favicon-32x32.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
@@ -37,13 +37,32 @@
         <span></span>
         <span></span>
       </button>
-      <a class="navbar-brand text-brand" href="index.html"><span class="color-b">Crater</span><span class="color-c"> Bush Villa</span></a>
+      <a href="index.html">
+        <div class="container-head">
+          <div class="row" >
+            <div class="col">
+              <img src="./assets/img/branding/Crater_Bush_Villa_Logo-no-bg.png" alt="" style="width: 5rem; ">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <a class="navbar-brand text-brand" href="index.html"><span class="color-b">Crater</span><span class="color-c"> Bush Villa</span></a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              Relax - Unwind - Breathe
+            </div>
+          </div>
+        </div>
+      </a>
+      
 
       <div class="navbar-collapse collapse justify-content-center" id="navbarDefault">
         <ul class="navbar-nav">
 
           <li class="nav-item">
-            <a class="nav-link " href="index.html">Home</a>
+            <a class="nav-link active" href="index.html">Home</a>
           </li>
 
           <li class="nav-item">
@@ -58,17 +77,25 @@
             <a class="nav-link " href="attractions-grid.html">Attractions</a>
           </li>
 
+          <!-- <li class="nav-item">
+            <a class="nav-link " href="waffle-place.html">Waffles</a>
+          </li> -->
+
           <li class="nav-item">
-            <a class="nav-link active" href="contact.html">Contact</a>
+            <a class="nav-link " href="contact.html">Contact</a>
           </li>
         </ul>
       </div>
 
+      
       <a href="booking.html" class="book-link">
-        <button type="button" class="btn btn-b-n" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01">
-          <i class="fa-regular fa-calendar-check"></i>
+        <button class="slide-button">
+          <span class="icon"> <i class="fa-solid fa-calendar-check"></i></span>
+          <span class="text">Book Now</span>
         </button>
       </a>
+
+
     </div>
   </nav><!-- End Header/Navbar -->
 
@@ -80,8 +107,10 @@
         <div class="row">
           <div class="col-md-12 col-lg-8">
             <div class="title-single-box">
-              <h1 class="title-single">Contact US</h1>
-              <span class="color-text-a">Aut voluptas consequatur unde sed omnis ex placeat quis eos. Aut natus officia corrupti qui autem fugit consectetur quo. Et ipsum eveniet laboriosam voluptas beatae possimus qui ducimus. Et voluptatem deleniti. Voluptatum voluptatibus amet. Et esse sed omnis inventore hic culpa.</span>
+              <h1 class="title-single">Contact Us</h1>
+              <span class="color-text-a">Immerse yourself in the captivating beauty of the <a href="https://whc.unesco.org/en/list/1162/">Vredefort Dome</a>, where breathtaking landscapes and abundant wildlife await. Whether you're seeking a romantic getaway, a family vacation, or a thrilling wildlife experience, our villa provides a haven for every traveler.
+                <br><br>
+                Indulge in luxurious accommodations designed to provide utmost relaxation after a day of exploration. Wake up to the soothing sounds of nature, savor delectable meals prepared with locally sourced ingredients, and explore a large variety of exciting activities around the villa.</span>
             </div>
           </div>
           <div class="col-md-12 col-lg-4">
@@ -101,157 +130,90 @@
     </section><!-- End Intro Single-->
 
     <!-- ======= Contact Single ======= -->
-    <section class="contact">
+    <section id="contact" class="contact section-t8">
       <div class="container">
+    
         <div class="row">
-          <div class="col-sm-12">
-            <div class="contact-map box">
-              <div id="map" class="contact-map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.1422937950147!2d-73.98731968482413!3d40.75889497932681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855c6480299%3A0x55194ec5a1ae072e!2sTimes+Square!5e0!3m2!1ses-419!2sve!4v1510329142834" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-12 section-t8">
-            <div class="row">
-              <div class="col-md-7">
-                <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-                  <div class="row">
-                    <div class="col-md-6 mb-3">
-                      <div class="form-group">
-                        <input type="text" name="name" class="form-control form-control-lg form-control-a" placeholder="Your Name" required>
-                      </div>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                      <div class="form-group">
-                        <input name="email" type="email" class="form-control form-control-lg form-control-a" placeholder="Your Email" required>
-                      </div>
-                    </div>
-                    <div class="col-md-12 mb-3">
-                      <div class="form-group">
-                        <input type="text" name="subject" class="form-control form-control-lg form-control-a" placeholder="Subject" required>
-                      </div>
-                    </div>
-                    <div class="col-md-12">
-                      <div class="form-group">
-                        <textarea name="message" class="form-control" name="message" cols="45" rows="8" placeholder="Message" required></textarea>
-                      </div>
-                    </div>
-                    <div class="col-md-12 my-3">
-                      <div class="mb-3">
-                        <div class="loading">Loading</div>
-                        <div class="error-message"></div>
-                        <div class="sent-message">Your message has been sent. Thank you!</div>
-                      </div>
-                    </div>
-
-                    <div class="col-md-12 text-center">
-                      <button type="submit" class="btn btn-a">Send Message</button>
-                    </div>
-                  </div>
-                </form>
-              </div>
-              <div class="col-md-5 section-md-t3">
-                <div class="icon-box section-b2">
-                  <div class="icon-box-icon">
-                    <span class="bi bi-envelope"></span>
-                  </div>
-                  <div class="icon-box-content table-cell">
-                    <div class="icon-box-title">
-                      <h4 class="icon-title">Say Hello</h4>
-                    </div>
-                    <div class="icon-box-content">
-                      <p class="mb-1">Email.
-                        <span class="color-a">contact@example.com</span>
-                      </p>
-                      <p class="mb-1">Phone.
-                        <span class="color-a">+54 356 945234</span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="icon-box section-b2">
-                  <div class="icon-box-icon">
-                    <span class="bi bi-geo-alt"></span>
-                  </div>
-                  <div class="icon-box-content table-cell">
-                    <div class="icon-box-title">
-                      <h4 class="icon-title">Find us in</h4>
-                    </div>
-                    <div class="icon-box-content">
-                      <p class="mb-1">
-                        Manhattan, Nueva York 10036,
-                        <br> EE. UU.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="icon-box">
-                  <div class="icon-box-icon">
-                    <span class="bi bi-share"></span>
-                  </div>
-                  <div class="icon-box-content table-cell">
-                    <div class="icon-box-title">
-                      <h4 class="icon-title">Social networks</h4>
-                    </div>
-                    <div class="icon-box-content">
-                      <div class="socials-footer">
-                        <ul class="list-inline">
-                          <li class="list-inline-item">
-                            <a href="#" class="link-one">
-                              <i class="bi bi-facebook" aria-hidden="true"></i>
-                            </a>
-                          </li>
-                          <li class="list-inline-item">
-                            <a href="#" class="link-one">
-                              <i class="bi bi-twitter" aria-hidden="true"></i>
-                            </a>
-                          </li>
-                          <li class="list-inline-item">
-                            <a href="#" class="link-one">
-                              <i class="bi bi-instagram" aria-hidden="true"></i>
-                            </a>
-                          </li>
-                          <li class="list-inline-item">
-                            <a href="#" class="link-one">
-                              <i class="bi bi-linkedin" aria-hidden="true"></i>
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+          <div class="col-md-12">
+            <div class="title-wrap d-flex justify-content-between">
+              <div class="title-box">
+                <h2 class="title-a">Contact Us</h2>
               </div>
             </div>
           </div>
         </div>
+    
+        <div class="row">
+    
+          <div class="col-lg-5 d-flex align-items-stretch">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>Venterskroon Road, Parys, South Africa</p>
+              </div>
+    
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>info@craterbushvilla.co.za</p>
+              </div>
+    
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>060 903 7425</p>
+              </div>
+    
+              <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d33561.64641111052!2d27.229152697475012!3d-26.88707666226831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9423fec0ace1b7%3A0x5c83856766195be9!2sVenterskroon!5e0!3m2!1sen!2sza!4v1689080951926!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <form action="https://formsubmit.co/#" method="POST" id="contact-form">
+              <div class="container">
+                <div class="contact-box">
+                  <div class="right">
+                    <h2>Contact Us</h2>
+                    <input type="text" class="field" placeholder="Name" name="name" id="name" required>
+                    <input type="email" class="field" placeholder="Email" name="email" id="email" required>
+                    <input type="tel" class="field" placeholder="Phone" name="tel-number" id="tel" required>
+                    <textarea placeholder="Message" class="field" name="message" required id="text"></textarea>
+                    <button type="submit" class="btn button" onclick="submitForm(event)" id="button-sub" style="display: none;"><span class="button__text">Send</span></button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
-    </section><!-- End Contact Single-->
-
+    </section><!-- End Contact Section -->
   </main><!-- End #main -->
 
-  <!-- ======= Footer ======= -->
-  <section class="section-footer">
+   <!-- ======= Footer ======= -->
+   <section class="section-footer">
     <div class="container">
       <div class="row">
         <div class="col-sm-12 col-md-4">
           <div class="widget-a">
             <div class="w-header-a">
-              <h3 class="w-title-a text-brand">EstateAgency</h3>
+              <h3 class="w-title-a text-brand">Crater Bush Villa</h3>
             </div>
             <div class="w-body-a">
               <p class="w-text-a color-text-a">
-                Enim minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip exea commodo consequat duis
-                sed aute irure.
+                Your Serene Wilderness Getaway.<br> <br>
+                Escape to Crater Bush Villa, a tranquil guesthouse nestled in the heart of the <a href="https://whc.unesco.org/en/list/1162/">Vredefort Dome</a>. Our idyllic retreat offers a perfect blend of comfort and adventure, allowing you to unwind and reconnect with the stunning natural surroundings.
               </p>
             </div>
             <div class="w-footer-a">
               <ul class="list-unstyled">
                 <li class="color-a">
-                  <span class="color-text-a">Phone .</span> contact@example.com
+                  <span class="color-b">Phone:</span> 060 903 7425
                 </li>
                 <li class="color-a">
-                  <span class="color-text-a">Email .</span> +54 356 945234
+                  <span class="color-b">Email:</span> info@craterbushvilla.co.za
                 </li>
               </ul>
             </div>
@@ -260,28 +222,28 @@
         <div class="col-sm-12 col-md-4 section-md-t3">
           <div class="widget-a">
             <div class="w-header-a">
-              <h3 class="w-title-a text-brand">The Company</h3>
+              <h3 class="w-title-a text-brand">Activities</h3>
             </div>
             <div class="w-body-a">
               <div class="w-body-a">
                 <ul class="list-unstyled">
                   <li class="item-list-a">
-                    <i class="bi bi-chevron-right"></i> <a href="#">Site Map</a>
+                    <i class="bi bi-chevron-right"></i> <a href="https://www.koedoeslaagte.com/" target="_blank">Cycling & Hiking</a>
                   </li>
                   <li class="item-list-a">
-                    <i class="bi bi-chevron-right"></i> <a href="#">Legal</a>
+                    <i class="bi bi-chevron-right"></i> <a href="https://koepelmegazip.website/" target="_blank">Zipline</a>
                   </li>
                   <li class="item-list-a">
-                    <i class="bi bi-chevron-right"></i> <a href="#">Agent Admin</a>
+                    <i class="bi bi-chevron-right"></i> <a href="http://www.dimalachite.co.za/" target="_blank">Fishing</a>
                   </li>
                   <li class="item-list-a">
-                    <i class="bi bi-chevron-right"></i> <a href="#">Careers</a>
+                    <i class="bi bi-chevron-right"></i> <a href="https://eagleriverrafting.co.za/" target="_blank">White Water Rafting</a>
                   </li>
                   <li class="item-list-a">
-                    <i class="bi bi-chevron-right"></i> <a href="#">Affiliate</a>
+                    <i class="bi bi-chevron-right"></i> <a href="https://www.facebook.com/bosboer.winkel.en.koffiehuis/" target="_blank">Petting Zoo</a>
                   </li>
                   <li class="item-list-a">
-                    <i class="bi bi-chevron-right"></i> <a href="#">Privacy Policy</a>
+                    <i class="bi bi-chevron-right"></i> <a href="#wildlife">Wildlife</a>
                   </li>
                 </ul>
               </div>
@@ -291,27 +253,30 @@
         <div class="col-sm-12 col-md-4 section-md-t3">
           <div class="widget-a">
             <div class="w-header-a">
-              <h3 class="w-title-a text-brand">International sites</h3>
+              <h3 class="w-title-a text-brand">Local Attractions</h3>
             </div>
             <div class="w-body-a">
               <ul class="list-unstyled">
                 <li class="item-list-a">
-                  <i class="bi bi-chevron-right"></i> <a href="#">Venezuela</a>
+                  <i class="bi bi-chevron-right"></i> <a href="https://www.koedoeslaagte.com/" target="_blank">Koedoeslaagte</a>
                 </li>
                 <li class="item-list-a">
-                  <i class="bi bi-chevron-right"></i> <a href="#">China</a>
+                  <i class="bi bi-chevron-right"></i> <a href="https://koepelmegazip.website/" target="_blank">Koepel Mega Zip</a>
                 </li>
                 <li class="item-list-a">
-                  <i class="bi bi-chevron-right"></i> <a href="#">Hong Kong</a>
+                  <i class="bi bi-chevron-right"></i> <a href="http://www.dimalachite.co.za/" target="_blank">Dimalachite River Lodge</a>
                 </li>
                 <li class="item-list-a">
-                  <i class="bi bi-chevron-right"></i> <a href="#">Argentina</a>
+                  <i class="bi bi-chevron-right"></i> <a href="https://eagleriverrafting.co.za/" target="_blank">Eagle River Rafting</a>
                 </li>
                 <li class="item-list-a">
-                  <i class="bi bi-chevron-right"></i> <a href="#">Singapore</a>
+                  <i class="bi bi-chevron-right"></i> <a href="https://www.facebook.com/bosboer.winkel.en.koffiehuis/" target="_blank" target="_blank">BosBoer</a>
                 </li>
                 <li class="item-list-a">
-                  <i class="bi bi-chevron-right"></i> <a href="#">Philippines</a>
+                  <i class="bi bi-chevron-right"></i> <a href="https://venterskroon-inn.business.site/?utm_source=gmb&utm_medium=referral " target="_blank">Venterskroon Inn</a>
+                </li>
+                <li class="item-list-a">
+                  <i class="bi bi-chevron-right"></i> <a href="https://www.hartelus.co.za/" target="_blank">Hartelus Market</a>
                 </li>
               </ul>
             </div>
@@ -327,42 +292,35 @@
           <nav class="nav-footer">
             <ul class="list-inline">
               <li class="list-inline-item">
-                <a href="#">Home</a>
+                <a href="index.html">Home</a>
               </li>
               <li class="list-inline-item">
-                <a href="#">About</a>
+                <a href="about.html">About</a>
               </li>
               <li class="list-inline-item">
-                <a href="#">Rooms</a>
+                <a href="rooms.html">Rooms</a>
               </li>
               <li class="list-inline-item">
-                <a href="#">Attractions</a>
+                <a href="attractions-grid.html">Attractions</a>
               </li>
+              <!-- <li class="list-inline-item">
+                <a href="waffle-place.html">Waffles</a>
+              </li> -->
               <li class="list-inline-item">
-                <a href="#">Contact</a>
+                <a href="contact.html">Contact</a>
               </li>
             </ul>
           </nav>
           <div class="socials-a">
             <ul class="list-inline">
               <li class="list-inline-item">
-                <a href="#">
+                <a href="https://www.facebook.com/craterbushvilla/" target="_blank">
                   <i class="bi bi-facebook" aria-hidden="true"></i>
                 </a>
               </li>
               <li class="list-inline-item">
-                <a href="#">
-                  <i class="bi bi-twitter" aria-hidden="true"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
+                <a href="https://www.instagram.com/craterbushvilla/" target="_blank">
                   <i class="bi bi-instagram" aria-hidden="true"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="bi bi-linkedin" aria-hidden="true"></i>
                 </a>
               </li>
             </ul>
@@ -370,11 +328,11 @@
           <div class="copyright-footer">
             <p class="copyright color-text-a">
               &copy; Copyright
-              <span class="color-a">Crater Bush Villa</span> All Rights Reserved.
+              <span class="color-b">Crater Bush Villa</span> All Rights Reserved.
             </p>
           </div>
           <div class="credits">
-            Developed by <a href="https://bootstrapmade.com/">Code Solution Studios</a>
+            Developed by <a href="https://codesolutionstudios.co.za/" class="css" target="_blank">Code Solution Studios</a>
           </div>
         </div>
       </div>
