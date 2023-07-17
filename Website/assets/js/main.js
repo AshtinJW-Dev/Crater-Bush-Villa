@@ -276,3 +276,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // Add the `submitForm()` function to the `button` element
 button.addEventListener('click', submitForm);
+
+
+// rooms image gallery
+
+
+

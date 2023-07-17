@@ -1965,7 +1965,7 @@ a:hover {
 
 .card-box-ico {
   padding: 1rem 3rem 1rem 2.5rem;
-  border: 5px solid #D8763C;
+  border: 5px solid #E8C9A2;
 }
 
 .card-box-ico i{
@@ -2406,13 +2406,13 @@ form .right{
 	padding: 25px 40px;
 }
 
-form h2{
+form h3{
 	position: relative;
 	padding: 0 0 10px;
 	margin-bottom: 10px;
 }
 
-form h2:after{
+form h3:after{
 	content: '';
     position: absolute;
     left: 50%;
@@ -2536,17 +2536,106 @@ form .field:focus{
 /*--------------------------------------------------------------
 # Rooms
 --------------------------------------------------------------*/
-.rooms .img-box-a{
-  height: 30rem;
+
+/* rooms img grid */
+.gallery-grid {
+  box-sizing: border-box;
 }
 
-.carousel-item-b {
-  height: 20rem;
+.image-grid {
+  padding: 12px;
 }
 
-.carousel-item-b img{
-  width: 100%;
-  height: 100%;
+.image-row {
+  display: flex;  
+}
+
+.image-row .image {
+  margin: 12px;
+  height: 240px;  
+}
+
+.image { 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+  padding-top: .2rem;
+  background-color: #F7E3D0;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3), 
+              0 6px 20px rgba(0, 0, 0, 0.15),
+              0 6px 20px rgba(0, 0, 0, 0.7);
+}
+.image img{
+  height: 99%;
+  width: 70%;
+  border-radius: 10px;
+}
+
+.image-zoom img{
+  transition: transform 0.3s;
+}
+
+.image-zoom:hover img{
+  transform: scale(1.2);
+}
+
+.image-01 {
+  flex: 1;  
+}
+
+.image-02 {
+  flex: 1;  
+}
+
+.image-03 {
+  flex: 1;  
+}
+
+.image-04 {
+  flex: 1;
+}
+
+.image-05 {
+  flex: 2;
+}
+
+.image-06 {
+  flex: 2;
+}
+
+.image-07 {
+  flex: 1;
+}
+
+.image-08 {
+  flex: 3;
+}
+
+.image-09 {
+  flex: 1;
+}
+
+.image-10 {
+  flex: 1;
+}
+
+.image-11 {
+  flex: 1;
+}
+
+.image-12 {
+  flex: 3;
+}
+
+@media screen and (max-width: 400px) {
+  .image-row {
+    flex-direction: column;
+  }
+  
+  .image-row .image {
+    flex-basis: auto;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -2578,6 +2667,12 @@ form .field:focus{
   border-radius: 10px;
 }
 
+/*--------------------------------------------------------------
+# Booking
+--------------------------------------------------------------*/
+.booking-cal{
+  text-align: center;
+}
 
 /*--------------------------------------------------------------
 # Footer
