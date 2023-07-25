@@ -102,8 +102,8 @@ a:hover {
 
 .text-brand {
   color: #000000;
-  font-size: 2rem;
-  font-weight: 600;
+  font-size: 2.5rem;
+  font-weight: 700;
 }
 
 @media (max-width: 767px) {
@@ -273,7 +273,7 @@ a:hover {
 
 /*------/ Space Padding /------*/
 .section-t8 {
-  padding-top: 8rem;
+  padding-top: 7rem;
 }
 
 @media (max-width: 767px) {
@@ -421,6 +421,10 @@ a:hover {
   width: 36px;
 }
 
+.swiper-pagination-bullet{
+  color: #000000 !important;
+}
+
 .nav-arrow-a {
   text-decoration: none;
 }
@@ -464,6 +468,15 @@ a:hover {
 
 .nav-arrow-b .owl-arrow .owl-nav .owl-next {
   margin-left: 0px;
+}
+
+.intro-carousel .swiper-wrapper{
+  padding-top: 20vh;
+}
+
+.intro-carousel .swiper-wrapper .swiper-slide{
+  
+  height: 40rem;
 }
 
 /*------/ Socials /------*/
@@ -1010,7 +1023,7 @@ a:hover {
 # Hero Section
 --------------------------------------------------------------*/
 .intro {
-  height: 100vh;
+  height: 80vh;
   position: relative;
   color: #ffffff;
 }
@@ -2149,7 +2162,7 @@ a:hover {
 
 .sinse-box {
   background-color: #D8763C;
-  padding: 1rem 2rem;
+  padding: 1rem 1rem;
   position: absolute;
   left: 15px;
   bottom: 10px;
@@ -2157,20 +2170,20 @@ a:hover {
 
 @media (min-width: 576px) {
   .sinse-box {
-    padding: 1.5rem 2.5rem;
+    padding: 1rem 1rem;
     bottom: 20px;
   }
 }
 
 @media (min-width: 768px) {
   .sinse-box {
-    padding: 1.5rem 3rem;
+    padding: 1rem 1rem;
   }
 }
 
 @media (min-width: 992px) {
   .sinse-box {
-    padding: 3rem 4.5rem;
+    padding: 1rem 1rem;
   }
 }
 
@@ -2650,6 +2663,9 @@ form .field:focus{
   width: 100%;
 }
 
+.card-category-b{
+  text-align: center;
+}
 
 /*--------------------------------------------------------------
 # About Page
@@ -2732,4 +2748,8 @@ footer .credits {
 
 .credits:hover:after {
   width: 100%;
+}
+
+.footer-logo{
+ max-width: 100%;
 }
