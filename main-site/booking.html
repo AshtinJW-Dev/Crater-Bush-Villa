@@ -25,6 +25,20 @@
   <!-- Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+   <!-- Google tag (gtag.js) -->
+   <script
+   async
+   src="https://www.googletagmanager.com/gtag/js?id=G-N02LWKK39S"
+ ></script>
+ <script>
+   window.dataLayer = window.dataLayer || [];
+   function gtag() {
+     dataLayer.push(arguments);
+   }
+   gtag("js", new Date());
+
+   gtag("config", "G-N02LWKK39S");
+ </script>
 </head>
 
 <body>
@@ -85,15 +99,16 @@
           <a class="nav-link " href="contact.html">Contact</a>
         </li>
       </ul>
+      <a href="booking.html" class="book-link">
+        <button class="slide-button">
+          <span class="icon"> <i class="fa-solid fa-calendar-check"></i></span>
+          <span class="text">Book Now</span>
+        </button>
+      </a>
     </div>
 
     
-    <a href="booking.html" class="book-link">
-      <button class="slide-button">
-        <span class="icon"> <i class="fa-solid fa-calendar-check"></i></span>
-        <span class="text">Book Now</span>
-      </button>
-    </a>
+    
 
 
   </div>
@@ -114,7 +129,7 @@
                 <ul>
                 <li><span class="color-b">Check availability:</span> Browse our reservation calendar below to find the perfect dates for your stay. Crater Bush Villa is highly sought after, so we recommend planning well in advance to secure your preferred dates.</li><br>
                 
-                <li><span class="color-b">Use the booking form to reserve dates:</span> Once you've decided on your preferred dates, get in touch with us using the booking form below to make a reservation. (The submit button will appear once the form is filled in.)</li><br>
+                <li><span class="color-b">Use the booking form to reserve dates:</span> Once you've decided on your preferred dates, get in touch with us using the booking form below to make a reservation.</li><br>
 
                 <li><span class="color-b">Our reservations team will be in contact:</span> Once you've submitted the form, our team will be in touch to confirm your dates and the pricing for your stay at Crater Bush Villa.</li><br>
                 
@@ -178,7 +193,7 @@
           </div>
     
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="https://formsubmit.co/#" method="POST" id="contact-form">
+            <form action="https://formsubmit.co/craterbushvilla@gmail.com" method="POST" id="contact-form">
               <div class="container">
                 <div class="contact-box">
                   <div class="right">
@@ -191,7 +206,7 @@
                       <div class="col">
                         <div class=" inlined">
                           <label for="adult">Guests</label>
-                          <input type="number" id="adult" name="total_adults" placeholder="2" min="1" class="field" required>
+                          <input type="number" id="adult" name="total_adults" placeholder="0" min="1" class="field" required>
                         </div>
                       </div>
                     </div>
@@ -209,7 +224,7 @@
                         </div>
                       </div>
                     </div>
-                    <button type="submit" class="btn button" onclick="submitForm(event)" id="button-sub" style="display: none;"><span class="button__text">Send</span></button>
+                    <button type="submit" class="btn button" onclick="submitForm(event)" id="button-sub"><span class="button__text">Send</span></button>
                   </div>
                 </div>
               </div>
@@ -369,7 +384,7 @@
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>

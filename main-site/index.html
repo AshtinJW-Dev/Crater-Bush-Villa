@@ -57,6 +57,21 @@
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-N02LWKK39S"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-N02LWKK39S");
+    </script>
   </head>
 
   <body>
@@ -130,28 +145,29 @@
               <a class="nav-link" href="contact.html">Contact</a>
             </li>
           </ul>
+          <a href="booking.html" class="book-link">
+            <button class="slide-button">
+              <span class="icon">
+                <i class="fa-solid fa-calendar-check"></i
+              ></span>
+              <span class="text">Book Now</span>
+            </button>
+          </a>
         </div>
 
-        <a href="booking.html" class="book-link">
-          <button class="slide-button">
-            <span class="icon">
-              <i class="fa-solid fa-calendar-check"></i
-            ></span>
-            <span class="text">Book Now</span>
-          </button>
-        </a>
+        
       </div>
     </nav>
     <!-- End Header/Navbar -->
 
     <!-- ======= Intro Section ======= -->
-    
-      <div class="hero-container">
-        <div class="swiper-slide carousel-item-a intro-item bg-image hero-pic">
-          <img src="assets/img/scenery/crater collage.png" alt="" />
-        </div>
+
+    <div class="hero-container">
+      <div class="swiper-slide carousel-item-a intro-item bg-image hero-pic">
+        <img src="assets/img/scenery/crater collage.png" alt="" />
       </div>
-    
+    </div>
+
     <!-- End Intro Section -->
 
     <main id="main">
@@ -257,13 +273,46 @@
                     <div class="icon-wrapper">
                       <i class="fa-solid fa-bed"></i>
                     </div>
-                    <h3>Sleeps 8</h3>
+                    <h3>Self Catering Villa</h3>
                     <p>
                       Our 8 sleeper, 4 room, 2 bathroom self-catering bush villa
                       is the perfect choice for a comfortable nature getaway,
                       whether it's with friends, with family or your're looking
                       for a romantic getaway, tailor-made packages can be
                       arranged to suite your needs.
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="column">
+                <a href="rooms.html">
+                  <div class="card">
+                    <div class="icon-wrapper">
+                      <i class="fa-solid fa-fire"></i>
+                    </div>
+                    <h3>Indoor Braai/Entertainment Area</h3>
+                    <p>
+                      The indoor braai/entertainment area is a place where many
+                      memorable moments can be had around meals with family and
+                      friends, or sharing some drinks late into the night while
+                      trying your hand at our dart board.
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="column">
+                <a href="#wildlife">
+                  <div class="card">
+                    <div class="icon-wrapper">
+                      <i class="fa-solid fa-paw"></i>
+                    </div>
+                    <h3>Abundant Wildlife</h3>
+                    <p>
+                      Enjoy a morning coffee, laid back lunch or a cocktail
+                      sundowner on the open veranda, with breathtaking views of
+                      the surrounding scenery and abundant birds & wildlife.
+                      Maybe you'll even get the chance to meet some of our
+                      inquisitive monkeys.
                     </p>
                   </div>
                 </a>
@@ -302,22 +351,7 @@
                   </div>
                 </a>
               </div>
-              <div class="column">
-                <a href="rooms.html">
-                  <div class="card">
-                    <div class="icon-wrapper">
-                      <i class="fa-solid fa-fire"></i>
-                    </div>
-                    <h3>Indoor Braai/Entertainment Area</h3>
-                    <p>
-                      The indoor braai/entertainment area is a place where many
-                      memorable moments can be had around meals with family and
-                      friends, or sharing some drinks late into the night while
-                      trying your hand at our dart board.
-                    </p>
-                  </div>
-                </a>
-              </div>
+              
               <div class="column">
                 <a href="attractions-grid.html">
                   <div class="card">
@@ -334,23 +368,7 @@
                   </div>
                 </a>
               </div>
-              <div class="column">
-                <a href="#wildlife">
-                  <div class="card">
-                    <div class="icon-wrapper">
-                      <i class="fa-solid fa-paw"></i>
-                    </div>
-                    <h3>Abundant Wildlife</h3>
-                    <p>
-                      Enjoy a morning coffee, laid back lunch or a cocktail
-                      sundowner on the open veranda, with breathtaking views of
-                      the surrounding scenery and abundant birds & wildlife.
-                      Maybe you'll even get the chance to meet some of our
-                      inquisitive monkeys.
-                    </p>
-                  </div>
-                </a>
-              </div>
+              
             </div>
           </div>
         </div>
@@ -391,21 +409,18 @@
                       <div class="card-header-a">
                         <h3 class="card-title-a">
                           <a href="rooms.html"
-                            >Master <br />
+                            >Master
                             Bedroom</a
                           >
                         </h3>
                       </div>
                       <div class="card-body-a">
-                        <div class="price-box d-flex">
-                          
-                        </div>
+                        <div class="price-box d-flex"></div>
                         <a href="rooms.html" class="link-a"
                           >Click here to view
                           <span class="bi bi-chevron-right"></span>
                         </a>
                       </div>
-                      
                     </div>
                   </div>
                 </div>
@@ -426,19 +441,17 @@
                       <div class="card-header-a">
                         <h3 class="card-title-a">
                           <a href="rooms.html"
-                            >Guest <br />
+                            >Guest 
                             Bedroom 1</a
                           >
                         </h3>
                       </div>
                       <div class="card-body-a">
-                      
                         <a href="rooms.html" class="link-a"
                           >Click here to view
                           <span class="bi bi-chevron-right"></span>
                         </a>
                       </div>
-                      
                     </div>
                   </div>
                 </div>
@@ -459,19 +472,17 @@
                       <div class="card-header-a">
                         <h3 class="card-title-a">
                           <a href="rooms.html"
-                            >Guest <br />
+                            >Guest 
                             Bedroom 2</a
                           >
                         </h3>
                       </div>
                       <div class="card-body-a">
-                        
                         <a href="rooms.html" class="link-a"
                           >Click here to view
                           <span class="bi bi-chevron-right"></span>
                         </a>
                       </div>
-                      
                     </div>
                   </div>
                 </div>
@@ -492,21 +503,18 @@
                       <div class="card-header-a">
                         <h3 class="card-title-a">
                           <a href="rooms.html"
-                            >Bunkbed <br />
+                            >Bunkbed
                             Bedroom</a
                           >
                         </h3>
                       </div>
                       <div class="card-body-a">
-                        <div class="price-box d-flex">
-                         
-                        </div>
+                        <div class="price-box d-flex"></div>
                         <a href="rooms.html" class="link-a"
                           >Click here to view
                           <span class="bi bi-chevron-right"></span>
                         </a>
                       </div>
-                      
                     </div>
                   </div>
                 </div>
@@ -561,38 +569,11 @@
                   alt="antilope in tall grass"
                 />
               </div>
-              <div class="slide">
-                <img src="assets/img/wildlife/bird.jpg" alt="colorful bird" />
-              </div>
-              <div class="slide">
-                <img
-                  src="assets/img/wildlife/warthog.jpg"
-                  alt="warthog in tall grass"
-                />
-              </div>
-              <div class="slide">
-                <img
-                  src="assets/img/wildlife/monkey.jpg"
-                  alt="monkey sitting"
-                />
-              </div>
-              <div class="slide">
-                <img
-                  src="assets/img/wildlife/baboon.jpg"
-                  alt="baboon and its baby"
-                />
-              </div>
-              <div class="slide">
-                <img
-                  src="assets/img/wildlife/antilope.jpg"
-                  alt="antilope in tall grass"
-                />
-              </div>
             </div>
           </div>
         </div>
       </section>
-      <!-- End Latest News Section -->
+      <!-- End wildlife Section -->
 
       <!-- ======= Local Attractions Section ======= -->
       <section id="attractions" class="section-news section-t8">
@@ -923,7 +904,7 @@
 
             <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
               <form
-                action="https://formsubmit.co/#"
+                action="https://formsubmit.co/craterbushvilla@gmail.com"
                 method="POST"
                 id="contact-form"
               >
@@ -967,7 +948,7 @@
                         class="btn button"
                         onclick="submitForm(event)"
                         id="button-sub"
-                        style="display: none"
+                        
                       >
                         <span class="button__text">Send</span>
                       </button>
@@ -1155,7 +1136,7 @@
     <!-- Vendor JS Files -->
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
+    
 
     <!-- Main JS File -->
     <script src="assets/js/main.js"></script>

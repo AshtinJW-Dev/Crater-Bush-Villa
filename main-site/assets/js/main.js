@@ -224,58 +224,58 @@
   
 })()
 
-function submitForm(event) {
-  event.preventDefault(); // Prevent form submission (for testing)
+// function submitForm(event) {
+//   event.preventDefault(); // Prevent form submission (for testing)
 
-  var form = document.getElementById('contact-form');
-  var button = document.getElementById('button-sub');
-  var inputs = form.querySelectorAll('.field');
+//   var form = document.getElementById('contact-form');
+//   var button = document.getElementById('button-sub');
+//   var inputs = form.querySelectorAll('.field');
 
-  var isFormFilled = true;
+//   var isFormFilled = true;
 
-  inputs.forEach(function (input) {
-    if (input.value.trim() === '') {
-      isFormFilled = false;
-      return;
-    }
-  });
+//   inputs.forEach(function (input) {
+//     if (input.value.trim() === '') {
+//       isFormFilled = false;
+//       return;
+//     }
+//   });
 
-  if (isFormFilled && form.checkValidity()) {
-    button.style.display = 'block'; // Show the button
-  } else {
-    button.style.display = 'none'; // Hide the button
-  }
+//   if (isFormFilled && form.checkValidity()) {
+//     button.style.display = 'block'; // Show the button
+//   } else {
+//     button.style.display = 'none'; // Hide the button
+//   }
 
-  if (form.checkValidity()) {
-    event.target.classList.add('button--loading'); // Add loading class to the button
-    form.submit(); // Submit the form
-  }
-}
+//   if (form.checkValidity()) {
+//     event.target.classList.add('button--loading'); // Add loading class to the button
+//     form.submit(); // Submit the form
+//   }
+// }
 
-document.addEventListener('DOMContentLoaded', function () {
-  var form = document.getElementById('contact-form');
-  var button = document.getElementById('button-sub');
+// document.addEventListener('DOMContentLoaded', function () {
+//   var form = document.getElementById('contact-form');
+//   var button = document.getElementById('button-sub');
 
-  form.addEventListener('input', function () {
-    var isFormValid = true;
+//   form.addEventListener('input', function () {
+//     var isFormValid = true;
 
-    form.querySelectorAll('.field').forEach(function (input) {
-      if (!input.checkValidity()) {
-        isFormValid = false;
-        return;
-      }
-    });
+//     form.querySelectorAll('.field').forEach(function (input) {
+//       if (!input.checkValidity()) {
+//         isFormValid = false;
+//         return;
+//       }
+//     });
 
-    if (isFormValid && form.checkValidity()) {
-      button.style.display = 'block'; // Show the button
-    } else {
-      button.style.display = 'none'; // Hide the button
-    }
-  });
-});
+//     if (isFormValid && form.checkValidity()) {
+//       button.style.display = 'block'; // Show the button
+//     } else {
+//       button.style.display = 'none'; // Hide the button
+//     }
+//   });
+// });
 
-// Add the `submitForm()` function to the `button` element
-button.addEventListener('click', submitForm);
+// // Add the `submitForm()` function to the `button` element
+// button.addEventListener('click', submitForm);
 
 
 // rooms image gallery

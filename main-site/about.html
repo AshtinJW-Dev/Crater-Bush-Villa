@@ -27,6 +27,21 @@
 
   <!-- font awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+   <!-- Google tag (gtag.js) -->
+   <script
+   async
+   src="https://www.googletagmanager.com/gtag/js?id=G-N02LWKK39S"
+ ></script>
+ <script>
+   window.dataLayer = window.dataLayer || [];
+   function gtag() {
+     dataLayer.push(arguments);
+   }
+   gtag("js", new Date());
+
+   gtag("config", "G-N02LWKK39S");
+ </script>
 </head>
 
 <body>
@@ -87,15 +102,16 @@
             <a class="nav-link " href="contact.html">Contact</a>
           </li>
         </ul>
-      </div>
-
-      
-      <a href="booking.html" class="book-link">
+        <a href="booking.html" class="book-link">
         <button class="slide-button">
           <span class="icon"> <i class="fa-solid fa-calendar-check"></i></span>
           <span class="text">Book Now</span>
         </button>
       </a>
+      </div>
+
+      
+      
 
 
     </div>
@@ -297,7 +313,7 @@
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
